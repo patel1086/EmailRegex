@@ -8,7 +8,7 @@ public class Regex{
 	Scanner sc=new Scanner(System.in);
 	String mail=sc.nextLine();
 	
-	Pattern pattern = Pattern.compile("^[A-Za-z0-9]*@"+"[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$"); //Email Validation
+	Pattern pattern = Pattern.compile("^[_A-Za-z0-9+-]+(\\.[_A-Za-z0-9-]+)*@"+"[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$"); //Email Validation
 	Matcher m=pattern.matcher(mail);                                       
 	int i=0;
 
